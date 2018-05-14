@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>产品展示</title>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" content="MetInfo 5.3.19"  data-variable="https://show.metinfo.cn/muban/M1156008/328/,cn,102,,5,M1156008" />
+<meta name="description" content="安尔开锁主要业务为：开锁、换锁、汽车解码、汽车配匙等业务" />
+<meta name="keywords" content="安尔开锁|开锁|换锁|汽车解码|汽车配匙" />
+<link href="__STATIC__/index/img/1.ico" rel="shortcut icon" type="image/x-icon"/>
+<link rel="stylesheet" href="__STATIC__/index/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="__STATIC__/index/css/metinfo.css">
+<link rel="stylesheet" href="__STATIC__/index/css/style.css">
+
+
+</head>
+
+<body class="active">
+<!-- 侧边导航 -->
+<header role="heading" class="active">
+  <div class="head-box">
+    <div class="head-top">
+     <div class="logo-box">
+        <a href="#" title="安尔开锁">
+          <img src="__STATIC__/index/img/wryh2.png" title="安尔开锁" alt="安尔开锁|开锁|换锁|汽车解码|汽车配匙" class="img-aner">
+        </a>
+      </div>
+
+      <div class="jodo-box">
+	    <p><img src="{$company['company_wc']}" alt="扫一扫微信二维码"/></p>
+		<p>扫一扫微信二维码<em class="fa fa-mobile-phone"></em></p>
+	  </div>
+
+    </div>
+	<div class="nav-cut">
+	  <ul>
+
+		<li class="nav1 "><a href="index.html" title="精彩首页">精彩首页</a></li>
+
+		<li class="nav1 active">
+		  <a href="product.html"  title="产品展示" data-alert="全部">产品展示</a>
+		</li>
+
+		<li class="nav1 ">
+		  <a href="contact.html"  title="预约服务" data-alert="全部">预约服务</a>
+		</li>
+		<li class="nav1 ">
+		  <a href="{:url('index/User/index')}"  title="留言" data-alert="全部">留言</a>
+		</li>
+
+		<li class="background"></li>
+	  </ul>
+	</div>
+
+    <div class="head-bottom">
+      <div class="foto-box">
+
+			<div class="social-box">
+				<a href="#" rel="nofollow" target="_blank">
+					<i class="fa fa-qq"></i>
+				</a>
+				<a href="#" rel="nofollow" target="_blank"><i class="fa fa-weibo"></i></a>
+				<a id="met-weixin"><i class="fa fa-weixin"></i></a>
+				<div id="met-weixin-content" class="hide">
+					<div class="text-center met-weixin-img"><img src="__STATIC__/index/img/erweima.jpg" /></div>
+				</div>
+			</div>
+
+        <div class="foto-cut">高端服务，专业解锁</div>
+        <div class="powered_by_metinfo">
+        	<a href="#" target="_blank" title="">www.aner.com</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 主要内容 -->
+<section role="main" class="subpage active">
+  <div class="main-box">
+
+	<div class="sidebar-header ">
+	    <div class="sidebar-icon active">
+		    <i class="fa fa-arrow-left"></i>
+		    <i class="fa fa-th-list"></i>
+	    </div>
+  		<div class="sidebar-nav">
+    		<ol>全部</ol>
+    		<ul>
+				<li class="active"><a href="#"  title="全部">全部</a></li>
+			</ul>
+ 		</div>
+
+	  	<div class="sidebar-search">
+	    	<form method="get" action="">
+		      <input type="hidden" name="lang" value="cn" />
+		      <input type="hidden" name="class1" value="102" />
+		      <input type="search" name="searchword" class="searchword" placeholder="搜索" />
+		      <input type="submit" class="hidden" value=" " />
+		      <i class="fa fa-search"></i>
+	    	</form>
+	  	</div>
+	</div>
+
+<!-- 产品展示 -->
+<div class="met-img animsition">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="blocks-100 blocks-sm-2 blocks-md-3 blocks-xlg-4 no-space met-page-ajax" data-scale='0.66666666666667'>
+            	{foreach name="goods" item="vo"}
+				<li class="widget ">
+					<div class="cover overlay overlay-hover">
+						<img class="cover-image overlay-scale" src="{$vo['goods_src']}" alt="{$vo['goods_title']}" style=' height:300px;'/>
+						<div class="overlay-panel overlay-fade overlay-background overlay-background-fixed text-center vertical-align">
+							<div class="vertical-align-middle">
+								<button type="button" class="btn btn-outline btn-inverse met-img-showbtn" data-imglist="">浏览</button>
+
+							</div>
+						</div>
+					</div>
+    				<div class="cover-title">
+	  					<h3>{$vo['goods_title']}</h3>
+		  				<p>&nbsp;
+	        				<a href="#">{$vo['goods_abstract']}</a>
+	      				</p>
+					</div>
+				</li>
+            	{/foreach}
+			</ul>
+
+		<button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide">
+		  	<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</button>
+</div>
+<script src="__STATIC__/index/js/metinfo.js"></script>
+
+<!-- 页脚 -->
+<footer class="none">
+	<p>安尔开锁 版权所有 2010-2018 粤IP备000000000-0</p>
+</footer>
+
+</section>
+
+</body>
+</html>
